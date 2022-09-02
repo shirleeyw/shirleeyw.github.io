@@ -1,0 +1,507 @@
+body {
+    background-image: url(images/startbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    max-width: 1366px;
+    max-height: 768px;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    margin-top: 150px;
+    font-size: 35px;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* div {
+    margin-top: 10%;
+    margin-left: 10%;
+    float: left;
+} */
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: black;
+    height: 45px;
+    left: 0px;
+    top: 150px;
+    overflow: hidden;
+
+}
+
+footer a {
+    padding: 0px 8px 0px 8px;
+}
+
+/* ---------progress bar---------- */
+/* .progress-bar {
+    display: flex;
+    margin: 10px 0;
+}
+
+.progress-bar .step {
+    text-align: center;
+    width: 100%;
+}
+
+.progress-bar .step .bullet {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.progress-bar .step .bullet.active{
+    border-color: #d43f8d;
+    background: #d43f8d;
+}
+
+.progress-bar .step .bullet span{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.progress-bar .step .bullet.active span{
+    display: none;
+}
+
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+position: absolute;
+content: '';
+bottom: 11px;
+right: -131px;
+height: 3px;
+width: 132px;
+background: #262626;
+}
+
+.progress-bar .step .bullet.active:after{
+background: #d43f8d;
+transform: scaleX(0);
+transform-origin: left;
+animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+100%{transform: scaleX(1);}
+}
+
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+display: none;
+}
+
+.progress-bar .step p.active{
+color: #d43f8d;
+transition: 0.2s linear;
+} */
+
+#myform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 15px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
+    padding: 50px 30px 30px 30px;
+	box-sizing: border-box;
+	width: 35%;
+	margin-top: 13%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    overflow: hidden;
+    text-align: center;
+    float: right;
+	position: relative;
+}
+
+label {
+    font-size: 16pt;
+    line-height: 16px;
+    /* text-align: right;
+    display: block;
+    width: 10em;
+    height: 2px;
+    margin: 10px 0 0 60px; */
+}
+
+input[type=text] {
+    border: none;
+    border-radius: 10px;
+    background-color: #fbd8e7;
+    display: list-item;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    margin-left: 85px;
+    width:200px;
+    height:30px;
+    padding: 6px 10px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+input[type=text]:hover {
+    background-color: #fabdb9;
+}
+
+input[type=text]:focus {
+    background-color: #fabdb9;
+}
+
+/* ---------next button styling------------- */
+.next1, .next2, .next3, .next4, .next5, .next6, .next7 {
+    font-family: 'Poppins', sans-serif;
+    background-color: #c5a6c8;
+    border: none;
+    border-radius: 10px;
+    float: right;
+    width: 25%;
+    padding: 6px 10px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.back1, .back2, .back3, .back4, .back5, .back6, .back7 {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border-color: #e7d3e7;
+    border-style: solid;
+    color: #e7d3e7;
+    border-radius: 10px;
+    float: left;
+    width: 25%;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* start button styling */
+.start {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;  
+    color: #e96f64;
+    border: none;
+    border-radius: 10px;
+    width: 15%;
+    padding: 6px 10px;
+    margin-left: 550px;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.start:hover {
+    background-color: #e96f64;
+    box-shadow: 0 4px #d06259;
+    border-color: transparent;
+    color: white;
+    top: 2px;
+}
+
+.start:active {
+    top: 6px;
+}
+/* ---------submit button styling----------- */
+input[type=submit]{
+    float: right;
+    width: 25%;
+    padding: 6px 10px;
+    background-color: #c5a6c8;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: bold;   */
+    color: white;
+    outline: none;
+    cursor: pointer;
+
+}
+/* input[type=submit]:hover {
+    background-color: white;
+    border-color: #c5a6c8;
+    border-style: solid;
+    border-width: 2px;
+    color: #c5a6c8;
+} */
+
+
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+
+#overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7, #overlay8, #overlay9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+#overlay1 {
+    background-image: url(images/malename.png);
+    background-size: cover;
+}
+
+#overlay2 {
+    background-image: url(images/femalename.png);
+    background-size: cover;
+}
+
+#overlay3 {
+    background-image: url(images/pluralnoun.png);
+    background-size: cover;
+}
+
+#overlay4 {
+    background-image: url(images/verb.png);
+    background-size: cover;
+}
+
+#overlay5 {
+    background-image: url(images/malename.png);
+    background-size: cover;
+}
+
+#overlay6 {
+    background-image: url(images/femalename.png);
+    background-size: cover;
+}
+
+#overlay7 {
+    background-image: url(images/pluralnoun.png);
+    background-size: cover; 
+}
+
+#overlay8 {
+    background-image: url(images/verb.png);
+    background-size: cover;
+}
+
+
+#overlay9 {
+    background-image: url(images/finalbg.png);
+    background-size: cover;
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+#overlay9 p {
+    padding-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+#male {
+    position: absolute;
+    left: 160px;
+    top: 100px;
+    width: 290px;
+}
+
+#female {
+    position: absolute;
+    left: 160px;
+    top: 130px;
+    width: 350px;
+}
+
+@keyframes wiggle {
+    30%, 100% {transform: rotate(0deg);}
+    50% {transform: rotate(-12deg);}
+    80% {transform: rotate(3deg);}
+}
+  
+#male, #female {
+    animation: wiggle 2s infinite;
+}
+
+#cupid {
+    position: absolute;
+    left: 200px;
+    top: 110px;
+    width: 280px;
+    animation: fly 4s infinite ease-in-out;
+}
+
+@keyframes fly {
+    0% {top: 90px;}
+    50% {top: 140px;}
+    100% {top: 90px;}
+}
+
+#loveletter {
+    position: absolute;
+    left: 240px;
+    top: 180px;
+    width: 370px;
+}
+
+#heart1 {
+    position: absolute;
+    transform: rotate(-32deg);
+    left: 20%;
+    top: 170px;
+    bottom: 0px;
+    width: 50px;
+    animation: flyingHeart 2s infinite normal ease-out;
+
+}
+
+#heart2 {
+    position: absolute;
+    transform: rotate(10deg);
+    left: 28%;
+    top: 160px;
+    bottom: 0px;
+    width: 50px;
+    animation: flyingHeart 2s infinite normal ease-out;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes flyingHeart {
+    0% {
+        bottom: 0px;
+        opacity: 1;
+    }
+    100% {
+        top: 50px;
+        bottom: 145px;
+        opacity: 0;
+    }
+}
+
+#chocolate {
+    position: absolute;
+    left: 200px;
+    top: 160px;
+    width: 300px;
+    animation: wiggle 2s infinite;
+
+}
+
+#heartcouple {
+    position: absolute;
+    left: 190px;
+    top: 220px;
+    width: 350px;
+}
+
+#lefteyes {
+    position: absolute;
+    left: 235px;
+    top: 262px;
+    width: 80px;
+    animation: blink 2s linear infinite;
+}
+
+#righteyes {
+    position: absolute;
+    left: 418px;
+    top: 262px;
+    width: 80px;
+    animation: blink 2s linear infinite;
+    animation-delay: 1s;
+
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+#tinder {
+    position: absolute;
+    transform: rotate(-15deg);
+    left: 190px;
+    top: 200px;
+    width: 170px;
+}
+
+#bumble {
+    position: absolute;
+    transform: rotate(10deg);
+    left: 380px;
+    top: 270px;
+    width: 170px;
+}
+
+
+@keyframes shake {
+    0%{
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px, 1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-2px, -3px) rotate(-1deg);
+    }
+    75% {
+        transform: translate(5px, -5px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px, 1px) rotate(-1deg);
+    }
+}
+
+#tinder:hover {
+    animation: shake 0.5s infinite;
+    cursor: pointer;
+}
+
+#bumble:hover {
+    animation: shake 0.5s infinite;
+    cursor: pointer;
+}
+
+#headphones {
+    position: absolute;
+    left: 190px;
+    top: 180px;
+    width: 300px;
+    animation: wiggle 1s infinite;
+}
+
+#musicalnote {
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    width: 100px;
+    animation: music 1s infinite;
+}
+
+@keyframes music{
+    30%, 100% {transform: rotate(0deg);}
+    50% {transform: rotate(20deg);}
+    80% {transform: rotate(-5deg);}
+}

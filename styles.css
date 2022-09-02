@@ -1,0 +1,134 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-top: 30px;
+}
+
+.container {
+    margin:auto;
+    max-width: 1200px;
+    min-width: 800px;
+
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+
+}
+
+img {
+    width: 1200px;
+    height: 250px;
+    display: grid;
+}
+
+img:hover{ 
+    filter: brightness(2);
+}
+
+#banner {
+    /* width: 1200px; */
+    height: 250px;
+    margin: auto;
+    border-radius: 25px;
+
+    background: linear-gradient(45deg,#fbc1b5, #dfa3a6, #bfc9e0, #9da9b7);
+    background-size: 400%, 400%;
+    animation: gradient 10s ease infinite;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 1px;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+header h2 {
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+
+/* div {
+    padding: 5px 0px 10px 0px;
+} */
+
+ul {
+    list-style-type: none;
+    line-height: 2;
+    padding:0;
+}
+
+li {
+    /* padding-left: 40px; */
+    text-align:center;
+}
+
+.container h2 {
+    font-weight:600;
+
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+a:hover {
+    color: #9da9b7;
+}
+
+#column1 {
+    flex:1;
+    margin-right: 12px;
+    padding: 12px 0px 12px 0px;
+    border: 2px solid #c79eaf;
+    border-radius: 25px;
+    background-color: #f4f4f4;
+}
+
+#column2 {
+    flex:1;
+    margin-right: 12px;
+    padding: 12px 0px 12px 0px;
+    border: 2px solid #9da9b7;
+    border-radius: 25px;
+    background-color: #f4f4f4;
+}
+
+#column3 {
+    flex:1;
+    margin-right: 12px;
+    padding: 12px 0px 12px 0px;
+    border: 2px solid #c79eaf;
+    border-radius: 25px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    height:50px;
+}
+
+footer a {
+    padding: 0px 8px 0px 8px;
+}

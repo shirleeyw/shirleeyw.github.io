@@ -1,0 +1,491 @@
+body {
+    background-image: url(images/startbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    max-width: 1366px;
+    max-height: 768px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 35px;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: black;
+    height: 45px;
+    left: 0px;
+    top: 200px;
+    overflow: hidden;
+}
+
+footer a {
+    padding: 0px 8px 0px 8px;
+}
+
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+#myform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 15px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
+    padding: 50px 30px 30px 30px;
+	box-sizing: border-box;
+	width: 35%;
+	margin-top: 13%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    overflow: hidden;
+    text-align: center;
+    float: right;
+	position: relative;
+}
+
+label {
+    font-size: 16pt;
+    line-height: 16px;
+}
+
+input[type=text] {
+    border: none;
+    border-radius: 10px;
+    background-color: #fbd8e7;
+    display: list-item;
+    margin-top: 3%;
+    margin-bottom: 8%;
+    margin-left: 22%;
+    width:200px;
+    height:30px;
+    padding: 6px 10px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+input[type=text]:hover {
+    background-color: #fabdb9;
+}
+
+input[type=text]:focus {
+    background-color: #fabdb9;
+}
+
+/* ---------next button styling------------- */
+.next1, .next2, .next3, .next4, .next5, .next6, .next7 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: #c5a6c8;
+    border: none;
+    border-radius: 10px;
+    float: right;
+    width: 25%;
+    padding: 6px 10px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.back1, .back2, .back3, .back4, .back5, .back6, .back7 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: white;
+    border-color: #c5a6c8;
+    border-style: solid;
+    color: #c5a6c8;
+    border-radius: 10px;
+    float: left;
+    width: 25%;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* start button styling */
+.start {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;  
+    color: #e96f64;
+    border: none;
+    border-radius: 10px;
+    width: 15%;
+    padding: 6px 10px;
+    margin-left: 550px;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.start:hover {
+    background-color: #e96f64;
+    box-shadow: 0 4px #d06259;
+    border-color: transparent;
+    color: white;
+    top: 2px;
+}
+
+.start:active {
+    top: 6px;
+}
+/* ---------submit button styling----------- */
+input[type=submit]{
+    float: right;
+    width: 25%;
+    padding: 6px 10px;
+    background-color: #c5a6c8;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+
+}
+
+/* ------overlay styling and overlay backgrounds-------- */
+
+#overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7, #overlay8, #overlay9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+#overlay1 {
+    background-image: url(images/malename.png);
+    background-size: cover;
+}
+
+#overlay2 {
+    background-image: url(images/femalename.png);
+    background-size: cover;
+}
+
+#overlay3 {
+    background-image: url(images/pluralnoun.png);
+    background-size: cover;
+}
+
+#overlay4 {
+    background-image: url(images/verb.png);
+    background-size: cover;
+}
+
+#overlay5 {
+    background-image: url(images/malename.png);
+    background-size: cover;
+}
+
+#overlay6 {
+    background-image: url(images/femalename.png);
+    background-size: cover;
+}
+
+#overlay7 {
+    background-image: url(images/pluralnoun.png);
+    background-size: cover; 
+}
+
+#overlay8 {
+    background-image: url(images/verb.png);
+    background-size: cover;
+}
+
+
+#overlay9 {
+    background-image: url(images/finalbg.png);
+    background-size: cover;
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+#overlay9 p {
+    padding-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    line-height: 1.6em;
+}
+
+/* --------all graphics' styling + their animations-------- */
+#male {
+    position: absolute;
+    left: 12%;
+    top: 18%;
+    width: 290px;
+}
+
+#female {
+    position: absolute;
+    left: 12%;
+    top: 20%;
+    width: 350px;
+}
+
+@keyframes wiggle {
+    30%, 100% {transform: rotate(0deg);}
+    50% {transform: rotate(-12deg);}
+    80% {transform: rotate(3deg);}
+}
+  
+#male, #female {
+    animation: wiggle 2s infinite;
+}
+
+#cupid {
+    position: absolute;
+    left: 16%;
+    top: 15%;
+    width: 280px;
+    animation: fly 4s infinite ease-in-out;
+}
+
+@keyframes fly {
+    0% {top: 90px;}
+    50% {top: 140px;}
+    100% {top: 90px;}
+}
+
+#loveletter {
+    position: absolute;
+    left: 18%;
+    top: 31%;
+    /* left: 240px;
+    top: 180px; */
+    width: 250px;
+}
+
+#heart1 {
+    position: absolute;
+    transform: rotate(-32deg);
+    left: 20%;
+    top: 28%;
+    width: 50px;
+    animation: flyingHeart 2s infinite normal ease-out;
+
+}
+
+#heart2 {
+    position: absolute;
+    transform: rotate(10deg);
+    left: 28%;
+    top: 26%;
+    width: 50px;
+    animation: flyingHeart 2s infinite normal ease-out;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes flyingHeart {
+    0% {
+        bottom: 0px;
+        opacity: 1;
+    }
+    100% {
+        top: 50px;
+        bottom: 145px;
+        opacity: 0;
+    }
+}
+
+#chocolate {
+    position: absolute;
+    left: 15%;
+    top: 26%;
+    width: 300px;
+    animation: wiggle 2s infinite;
+
+}
+
+#heartcouple {
+    position: absolute;
+    left: 15%;
+    top: 38%;
+    width: 350px;
+}
+
+#lefteyes {
+    position: absolute;
+    left: 235px;
+    top: 262px;
+    width: 80px;
+    animation: blink 2s linear infinite;
+}
+
+#righteyes {
+    position: absolute;
+    left: 418px;
+    top: 262px;
+    width: 80px;
+    animation: blink 2s linear infinite;
+    animation-delay: 1s;
+
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+#headphones {
+    position: absolute;
+    left: 16%;
+    top: 31%;
+    width: 300px;
+    animation: wiggle 1s infinite;
+}
+
+#musicalnote {
+    position: absolute;
+    left: 27%;
+    top: 14%;
+    width: 100px;
+    animation: music 1s infinite;
+}
+
+@keyframes music{
+    30%, 100% {transform: rotate(0deg);}
+    50% {transform: rotate(20deg);}
+    80% {transform: rotate(-5deg);}
+}
+
+#tinder {
+    position: absolute;
+    transform: rotate(-15deg);
+    left: 15%;
+    top: 29%;
+    width: 170px;
+    animation: shake 0.6s infinite;
+}
+
+#bumble {
+    position: absolute;
+    transform: rotate(10deg);
+    left: 28%;
+    top: 43%;
+    width: 170px;
+    animation: shake 0.8s infinite;
+}
+
+
+@keyframes shake {
+    0%{
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px, 1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-2px, -3px) rotate(-1deg);
+    }
+    75% {
+        transform: translate(5px, -5px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px, 1px) rotate(-1deg);
+    }
+}
+
+#purple {
+    position: absolute;
+    left: 7%;
+    top: 12%;
+    width: 112px; 
+    animation: shiftdown 0.8s infinite;
+}
+
+#yellow {
+    position: absolute;
+    left: 12%;
+    top: 40%;
+    width: 112px; 
+    animation: shiftdown 0.8s infinite;
+}
+
+#blue {
+    position: absolute;
+    left: 7%;
+    top: 68%;
+    width: 112px; 
+    animation: shiftdown 0.8s infinite;
+}
+
+#green {
+    position: absolute;
+    left: 85%;
+    top: 14%;
+    width: 112px; 
+    animation: shiftup 0.8s infinite;
+}
+
+#orange {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    width: 112px; 
+    animation: shiftup 0.8s infinite;
+}
+
+#pink {
+    position: absolute;
+    left: 85%;
+    top: 68%;
+    width: 112px; 
+    animation: shiftup 0.8s infinite;
+}
+
+@keyframes shiftdown {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    /* 25%{
+        transform: translate(1px, 1px);
+    } */
+    /* 50%{
+        transform: translate(5px, 5px);
+    } */
+    75% {
+        transform: translate(4px, -4px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes shiftup {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    75% {
+        transform: translate(-4px,-4px);
+    }
+}

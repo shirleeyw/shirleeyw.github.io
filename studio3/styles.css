@@ -1,0 +1,183 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #f4e9e4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.2fr;
+}
+
+button { 
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px 8px 0px 8px;
+    color: black;
+    font-size: 12px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* -----------game divs styling-------- */
+#instructions {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d45255;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 16px;
+}
+
+#gamecontrol {
+    background-color: #f8c462;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+#gamecontrol {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#game {
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color:#f9d498;
+    text-align: center;
+    font-size: 28px;
+}
+#actions {
+    grid-row: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color:#f9d498;
+    text-align: center;
+    padding-left: 50%;
+}
+
+#score {
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #f9d498;
+    text-align: center;
+    border-right: 3px solid white;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+/* ------------button styling-------------- */
+#startgame {
+    border-color: white;
+    border-radius: 10px;
+    outline: none;
+}
+
+#startgame:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+#quit {
+    border-color: white;
+    border-radius: 10px;
+    outline: none;
+}
+
+#quit:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+#roll {
+    background-color: #9adbf9;
+    border: none;
+    border-radius: 10px;
+}
+
+#roll:hover {
+    background-color: #8ac4df;
+    color: white;
+    transform: scale(1.04);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#rollagain {
+    background-color: #c4d7ac;
+    border: none;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-bottom: 8%;
+}
+#rollagain:hover {
+    background-color: #b1c39d;
+    color: white;
+    transform: scale(1.04);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#pass {
+    background-color: #d75354;
+    border: none;
+    border-radius: 10px;
+
+}
+#pass:hover {
+    background-color: #b84647;
+    color: white;
+    transform: scale(1.04);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/* ---------pigs img + animation--------- */
+#pig1 {
+    width: 100px;
+    position: absolute;
+    left: 7%;
+    top: 110px;
+}
+
+#pig2 {
+    width: 100px;
+    position: absolute;
+    left: 85%;
+    top: 110px;
+}
+
+@keyframes shake {
+    30%, 100% {transform: rotate(0deg);}
+    50% {transform: rotate(-20deg);}
+    80% {transform: rotate(10deg);}
+}
+  
+#pig1, #pig2 {
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

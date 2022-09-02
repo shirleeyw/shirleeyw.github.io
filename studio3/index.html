@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src= "script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section>
+            <img src = "images/piggy-01.png" alt="pig" id= "pig1">
+            <img src = "images/piggy-01.png" alt="pig" id= "pig2">
+        </section>
+        <div id= "instructions">
+            <h1>Game of PIG</h1>
+            <p>INSTRUCTIONS: There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's score resets, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
+        </div>
+
+        <div id="gamecontrol">
+            <h2>Start a Game</h2>
+            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+
+    </main>
+    <footer>
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        <a href="sources.html">Sources</a>
+    </footer>
+</body>
+</html>

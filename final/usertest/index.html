@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Date...Kinda Nervous</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src= "script.js" defer></script>
+</head>
+<body>
+    <main>
+        <!-- <div class="progress-bar">
+            <div class="step">
+                <div class="bullet">
+                    <span>1</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="bullet">
+                    <span>2</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="bullet">
+                    <span>3</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="bullet">
+                    <span>4</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="bullet">
+                    <span>5</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="bullet">
+                    <span>6</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="bullet">
+                    <span>7</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="bullet">
+                    <span>8</span>
+                </div>
+            </div>
+        </div> -->
+        <form id="myform">
+            <h1>First Date...Kinda Nervous</h1>
+            <h2>First dates can either go really well...or go horribly wrong</h2>
+        
+        <section id="home">
+            <input type="button" name="start" class="start" value="start">
+        </section>
+        
+
+        <section id="overlay1" class= "hidden">
+            <div>
+                <img id=male src="images/male.svg" alt="boy">
+            </div>
+
+            <fieldset id= "malename">
+                <label for="name1">enter a male name</label>
+                <input type= "text" id="name1" required>
+                <input type="button" name="next" class="next1" value="next">
+            </fieldset> 
+        </section>
+
+
+        <section id="overlay2" class= "hidden">
+            
+            <img id=female src="images/female.svg" alt="girl">
+            <fieldset id= "femalename">
+                <label for="name2">enter a female name</label>
+                <input type= "text" id="name2" required>
+                <input type="button" name="next" class="next2" value="next">
+                <input type="button" class= "back1" value="back">
+            </fieldset> 
+        </section>
+
+        <section id="overlay3" class= "hidden">
+            <img id=cupid src="images/cupid.svg" alt="cupid">
+            <fieldset>
+                <label for="pluralnoun">enter a plural noun</label>
+                <input type= "text" id="pluralnoun" required>
+                <input type="button" name="next" class="next3" value="next">
+                <input type="button" class= "back2" value="back">
+            </fieldset> 
+        </section>
+
+        <section id="overlay4" class= "hidden">
+            <img id=loveletter src="images/loveletter.svg" alt="loveletter">
+            <img id=heart1 src="images/heart.svg" alt="red heart">
+            <img id=heart2 src="images/heart.svg" alt="red heart">
+
+            <fieldset>
+                <label for="verb">enter a verb ending in -ed</label>
+                <input type= "text" id="verb" required>
+                <input type="button" name="next" class="next4" value="next">
+                <input type="button" class= "back3" value="back">
+            </fieldset> 
+        </section>
+
+        <section id="overlay5" class= "hidden">
+            <img id=chocolate src="images/chocolate.svg" alt="chocolate">
+            <fieldset>
+                <label for="food">enter a food item</label>
+                <input type= "text" id="food" required>
+                <input type="button" name="next" class="next5" value="next">
+                <input type="button" class= "back4" value="back">
+            </fieldset> 
+        </section>
+
+        <section id="overlay6" class= "hidden">
+            <img id=heartcouple src="images/heartcouple.svg" alt="two hearts">
+            <img id=lefteyes src="images/lefteyes.svg" alt="lefteyes">
+            <img id=righteyes src="images/righteyes.svg" alt="righteyes">
+
+
+            <fieldset>
+                <label for="bodypart">enter a body part</label>
+                <input type= "text" id="bodypart" required>
+                <input type="button" name="next" class="next6" value="next">
+                <input type="button" class= "back5" value="back">
+            </fieldset> 
+        </section>
+
+        <section id="overlay7" class= "hidden">
+            <img id=headphones src="images/headphones.svg" alt="headphones">
+            <img id=musicalnote src="images/musicalnotes.svg" alt="musicalnotes">
+
+
+            <fieldset>
+                <label for="song">enter a song title</label>
+                <input type= "text" id="song" required>
+                <input type="button" name="next" class="next7" value="next">
+                <input type="button" class= "back6" value="back">
+            </fieldset> 
+        </section>
+
+        <section id="overlay8" class= "hidden">
+            <img id=tinder src="images/tinder.svg" alt="tinder">
+            <img id=bumble src="images/bumble.svg" alt="bumble">
+
+            <fieldset>
+                <label for="datingapp">name of a dating app</label>
+                <input type= "text" id="datingapp" required>
+                <input type="submit" value="SUBMIT">
+                <input type="button" class= "back7" value="back">
+            </fieldset> 
+        </section>
+
+        <section id="overlay9" class="hidden">
+            <article>
+                <p id="message"></p>
+                <!-- <button id='restart'>restart</button> -->
+            </article>
+        </section>
+
+
+    </form>
+    </main>
+
+    <footer>
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+</body>
+</html>

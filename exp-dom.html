@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation</title>
+
+</head>
+<body>
+    <h1>JS Experimentation - Functions & DOM</h1>
+    <h2>This or That Game!</h2>
+
+    <p id="chooseBreakfast">Pancakes or Waffles? </p>
+    <p id="chooseTravel">Plane or Road Trip? </p>
+    <p id="chooseDessert">Ice Cream or Frozen Yogurt? </p>
+    <p id="chooseHome">Stay in or Go Out?  </p>
+
+    <button onclick="thisOrThat()">Let's Play</button>
+
+
+    <script>
+
+        // My program allows users to play the This or That Game, where users will be presented with questions asking which they prefer. There are two options for each question and they type out their choice. Then the program will print out their answers to the page.
+        
+        function thisOrThat(){
+            var pancakes = prompt("Pancakes or Waffles?", "");
+            var myBreakfast = document.getElementById("chooseBreakfast");
+            if(pancakes === null || pancakes === ""){
+               alert("Hmm, try again!");
+               var pancakes = prompt("Pancakes or Waffles?", "");
+            }
+            else {
+                var myBreakfastAnswer = document.createTextNode(`${pancakes}`);
+                myBreakfast.appendChild(myBreakfastAnswer);            
+            }
+            
+            var plane = prompt("Plane or Road Trip?", "");
+            var myTravel = document.getElementById("chooseTravel");
+            if (plane === null || plane === ""){
+                alert("Hmm, try again!");
+                var plane = prompt("Plane or Road Trip?", "");
+            }
+            else {
+                var myTravelAnswer = document.createTextNode(`${plane}`);
+                myTravel.appendChild(myTravelAnswer);
+            }
+
+            var icecream = prompt("Ice Cream or Frozen Yogurt?", "");
+            var myDessert = document.getElementById("chooseDessert");
+            if (icecream === null || icecream === ""){
+                alert("Hmm, try again!");
+                var icecream = prompt("Ice Cream or Frozen Yogurt?", "");
+            }
+            else {
+                var myDessertAnswer = document.createTextNode(`${icecream}`);
+                myDessert.appendChild(myDessertAnswer);
+            }
+
+            var stayIn = prompt("Stay In or Go Out?", "");
+            var myHome = document.getElementById("chooseHome");
+            if (stayIn === null || stayIn === ""){
+                alert("Hmm, try again!");
+                var stayIn = prompt("Stay In or Go Out?", "");
+            }
+            else {
+                var myHomeAnswer = document.createTextNode(`${stayIn}`);
+                myHome.appendChild(myHomeAnswer);
+            }
+        }
+
+        thisOrThat();
+
+     
+    
+    </script>
+    
+</body>
+</html>
